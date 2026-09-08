@@ -6,7 +6,7 @@ const rawAccessTTL = env.JWT_ACCESS_TTL?.match(/\d+/)?.[0] || '15';
 const JWT_ACCESS_TTL = Number(rawAccessTTL);
 const REFRESH_AGE = (JWT_ACCESS_TTL - 2) * 60 * 1000;
 
-const URL = `${env.INTERNAL_API_URL}/auth`;
+const URL = `${env.NEXT_PUBLIC_API_URL}/auth`;
 
 function createExpiredTime(): number {
     return (Date.now() + REFRESH_AGE);

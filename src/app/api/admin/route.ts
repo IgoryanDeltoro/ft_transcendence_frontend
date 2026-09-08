@@ -8,7 +8,7 @@ async function getAccessTokenFromCookie() {
     return session.accessToken;
 }
 
-const backendUrl = process.env.INTERNAL_API_URL;
+const backendUrl = process.env.NEXT_PUBLIC_API_URL;
 
 export async function DELETE (request: NextRequest) {
 

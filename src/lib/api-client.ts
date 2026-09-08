@@ -53,7 +53,7 @@ async function getValidAccessToken(): Promise<string | undefined> {
 }
 
 export async function apiFetch(endpoint: string, options: CustomApiOptions = {}): Promise<any> {
-    const baseUrl = process.env.INTERNAL_API_URL;
+    const baseUrl = process.env.NEXT_PUBLIC_API_URL;
     const url = `${baseUrl}/${endpoint}`;
 
     const accessToken = await getValidAccessToken();

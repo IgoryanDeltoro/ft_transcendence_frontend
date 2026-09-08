@@ -2,7 +2,7 @@ import type { JWT } from 'next-auth/jwt';
 
 const env = process.env;
 
-export const REFRESH_URL = `${env.INTERNAL_API_URL}/auth`;
+export const REFRESH_URL = `${env.NEXT_PUBLIC_API_URL}/auth`;
 export const SECRET = env.NEXTAUTH_SECRET as string;
 export const SECURE_COOKIE = env.NEXTAUTH_URL?.startsWith('https://') ?? !!env.VERCEL;
 export const SESSION_COOKIE_NAME = `${SECURE_COOKIE ? '__Secure-' : ''}next-auth.session-token`;
