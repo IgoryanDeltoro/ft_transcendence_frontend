@@ -4,7 +4,7 @@ import { changePasswordSchema, loginSchema, registerSchema } from '@/lib/schema'
 import { getServerSession } from 'next-auth';
 import { authOptions } from './auth';
 
-const url = process.env.INTERNAL_API_URL;
+const url = process.env.NEXT_PUBLIC_API_URL;
 
 export async function fetchRegister(formData: FormData) {
     const username = formData.get('username');
