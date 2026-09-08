@@ -1,0 +1,30 @@
+import Nav, { NavAuthLinks, NavLinks } from "@/ui/nav";
+import { ReactNode } from "react";
+import { getServerSession } from 'next-auth';
+import { authOptions } from "@/lib/auth";
+import Footer from "@/components/footer/footer";
+
+async function HomeLayout({ children }: { children: ReactNode }) {
+    let isAuthorized: boolean = false;
+    const session = await getServerSession(authOptions);
+    isAuthorized = !!session;
+
+    return (
+        <>
+            <header className="bg-[var(--color-bg-base)]">
+                <Nav>
+                    {isAuthorized 
+                        ? <NavLinks />
+                        : <NavAuthLinks />
+                    }
+                </Nav>
+            </header>
+            <main className="flex-1">
+                {children}
+            </main>
+            <Footer />
+        </>
+    );
+}
+
+export default HomeLayout;
