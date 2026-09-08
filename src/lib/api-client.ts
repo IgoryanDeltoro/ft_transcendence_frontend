@@ -35,7 +35,7 @@ async function getValidAccessToken(): Promise<string | undefined> {
             expires: new Date(0),
             httpOnly: true,
             secure: SECURE_COOKIE,
-            sameSite: 'lax'
+            sameSite: 'none'
         });
         return undefined;
     }
@@ -43,7 +43,7 @@ async function getValidAccessToken(): Promise<string | undefined> {
     const encoded = await encode({ token: refreshed, secret: SECRET, maxAge: COOKIE_MAX_AGE });
     cookieStore.set(SESSION_COOKIE_NAME, encoded, {
         httpOnly: true,
-        sameSite: 'lax',
+        sameSite: 'none',
         path: '/',
         secure: SECURE_COOKIE,
         maxAge: COOKIE_MAX_AGE,

@@ -51,7 +51,7 @@ const authMiddleware = withAuth(
                         expires: new Date(0),
                         httpOnly: true,
                         secure: SECURE_COOKIE,
-                        sameSite: 'lax'
+                        sameSite: 'none'
                     });
 
                     req.cookies.set(SESSION_COOKIE_NAME, '');
@@ -63,7 +63,7 @@ const authMiddleware = withAuth(
                 
                 response.cookies.set(SESSION_COOKIE_NAME, encoded, {
                     httpOnly: true,
-                    sameSite: 'lax',
+                    sameSite: 'none',
                     path: '/',
                     secure: SECURE_COOKIE,
                     maxAge: COOKIE_MAX_AGE,
