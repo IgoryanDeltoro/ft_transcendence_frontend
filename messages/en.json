@@ -50,7 +50,7 @@
                 "re-enter": "Re-enter your password",
                 "cancel": "Cancel",
                 "save": "Save",
-                "resetMessage": "Enter reset code",
+                "success": "Your password has been changed.",
                 "placeholderAt": "At least 8 characters",
                 "placeholderThe": "The password must match",
                 "wakeP": "Weak password"
@@ -83,8 +83,7 @@
         "loading": "Logging in...",
         "forgot_password": "Forgot password?",
         "no_account": "Don't have an account?",
-        "register_link": "Sign Up",
-        "google" : "Continue with Google"
+        "register_link": "Sign Up"
     },
     "Register": {
         "title": "Registration",
@@ -206,7 +205,7 @@
                 },
                 {
                 "label": "OAuth data:",
-                "text": "if you sign in with Google or GitHub, we receive your provider account ID and the basic profile information (name, email, avatar) that provider shares with us."
+                "text": "if you sign in with GitHub, we receive your provider account ID and the basic profile information (name, email, avatar) that provider shares with us."
                 },
                 {
                 "label": "Gameplay data:",
@@ -236,7 +235,7 @@
             },
             {
             "heading": "4. Third-party services",
-            "text": "If you choose to sign in with Google or GitHub, that provider processes your authentication under its own privacy policy. We only receive the minimal profile information needed to create or match your account. We do not use third-party advertising or analytics trackers."
+            "text": "If you choose to sign in with GitHub, that provider processes your authentication under its own privacy policy. We only receive the minimal profile information needed to create or match your account. We do not use third-party advertising or analytics trackers."
             },
             {
             "heading": "5. Sharing of information",
