@@ -50,7 +50,7 @@
                 "re-enter": "Passwort erneut eingeben",
                 "cancel": "Abbrechen",
                 "save": "Speichern",
-                "success": "Dein Passwort wurde geändert.",
+                "resetMessage": "Reset-Code eingeben",
                 "placeholderAt": "Mindestens 8 Zeichen",
                 "placeholderThe": "Die Passwörter müssen übereinstimmen",
                 "wakeP": "Schwaches Passwort"
@@ -84,7 +84,8 @@
         "loading": "Anmeldung läuft...",
         "forgot_password": "Passwort vergessen?",
         "no_account": "Noch kein Konto?",
-        "register_link": "Registrieren"
+        "register_link": "Registrieren",
+        "google" : "Mit Google fortfahren"
     },
     "Register": {
         "title": "Registrierung",
@@ -206,7 +207,7 @@
                 },
                 {
                 "label": "OAuth-Daten:",
-                "text": "wenn du dich mit GitHub anmeldest, erhalten wir deine Konto-ID beim Anbieter sowie die grundlegenden Profildaten (Name, E-Mail, Avatar), die dieser Anbieter mit uns teilt."
+                "text": "wenn du dich mit Google oder GitHub anmeldest, erhalten wir deine Konto-ID beim jeweiligen Anbieter sowie die grundlegenden Profildaten (Name, E-Mail, Avatar), die dieser Anbieter mit uns teilt."
                 },
                 {
                 "label": "Spieldaten:",
@@ -236,7 +237,7 @@
             },
             {
             "heading": "4. Dienste von Drittanbietern",
-            "text": "Wenn du dich für die Anmeldung mit GitHub entscheidest, verarbeitet dieser Anbieter deine Authentifizierung gemäß seiner eigenen Datenschutzerklärung. Wir erhalten nur die minimal notwendigen Profildaten, um dein Konto zu erstellen oder zuzuordnen. Wir verwenden keine Werbe- oder Analyse-Tracker von Drittanbietern."
+            "text": "Wenn du dich für die Anmeldung mit Google oder GitHub entscheidest, verarbeitet dieser Anbieter deine Authentifizierung gemäß seiner eigenen Datenschutzerklärung. Wir erhalten nur die minimal notwendigen Profildaten, um dein Konto zu erstellen oder zuzuordnen. Wir verwenden keine Werbe- oder Analyse-Tracker von Drittanbietern."
             },
             {
             "heading": "5. Weitergabe von Informationen",
